@@ -175,7 +175,7 @@ export default function BookingInquiry({ isOpen, onClose, preselectedRoom }) {
                     value={formData.phone}
                     onChange={handleChange}
                     className={`form-input ${errors.phone ? 'input-error' : ''}`}
-                    placeholder="E.g., +91 9876543210"
+                    placeholder="E.g., +91 9800220107"
                   />
                 </div>
                 {errors.phone && <span className="error-text">{errors.phone}</span>}

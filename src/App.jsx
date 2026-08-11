@@ -4,7 +4,9 @@ import Hero from './components/Hero';
 import Narrative from './components/Narrative';
 import Experiences from './components/Experiences';
 import Rooms from './components/Rooms';
+import LocalAttractions from './components/LocalAttractions';
 import BuildingTour from './components/BuildingTour';
+import HowToReach from './components/HowToReach';
 import BookingInquiry from './components/BookingInquiry';
 import { Mail, Phone, MapPin } from 'lucide-react';
 
@@ -40,8 +42,14 @@ export default function App() {
         {/* Room Grid */}
         <Rooms onOpenBooking={handleOpenBooking} />
 
+        {/* Local Attractions */}
+        <LocalAttractions />
+
         {/* Building & Spaces */}
         <BuildingTour />
+
+        {/* How To Reach directions */}
+        <HowToReach />
       </main>
 
       {/* Footer */}
@@ -79,11 +87,11 @@ export default function App() {
               </div>
               <div className="footer-contact-item">
                 <Phone size={16} className="footer-contact-icon" />
-                <span>+91 98765 43210</span>
+                <span>+91 98002 20107</span>
               </div>
               <div className="footer-contact-item">
                 <Mail size={16} className="footer-contact-icon" />
-                <span>info@hotelgatecherry.com</span>
+                <span>info@redcherrypelling.com</span>
               </div>
             </div>
           </div>

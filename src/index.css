@@ -1648,3 +1648,309 @@ img {
     margin-top: 3rem;
   }
 }
+
+/* Attractions Section Styling */
+.attractions-section {
+  background-color: var(--color-white);
+  border-bottom: 1px solid var(--color-gray-light);
+}
+
+.attractions-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.attractions-header {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 3.5rem auto;
+}
+
+.attractions-intro {
+  font-family: var(--font-sans);
+  font-size: 1rem;
+  color: var(--color-slate);
+  line-height: 1.7;
+}
+
+.attractions-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2.5rem;
+}
+
+.attraction-card {
+  background-color: var(--color-linen);
+  border-radius: 12px;
+  padding: 2.5rem;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.02);
+  border: 1px solid var(--color-gray-light);
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  transition: var(--transition-smooth);
+}
+
+.attraction-card:hover {
+  transform: translateY(-4px);
+  background-color: var(--color-white);
+  box-shadow: 0 12px 30px rgba(26, 48, 37, 0.05);
+  border-color: rgba(26, 48, 37, 0.08);
+}
+
+.attraction-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.attraction-number {
+  font-family: var(--font-serif);
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--color-pink-dark);
+  opacity: 0.8;
+}
+
+.attraction-icon-wrapper {
+  color: var(--color-forest);
+  background-color: rgba(26, 48, 37, 0.04);
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: var(--transition-smooth);
+}
+
+.attraction-card:hover .attraction-icon-wrapper {
+  background-color: var(--color-pink);
+  color: var(--color-forest-dark);
+}
+
+.attraction-title {
+  font-family: var(--font-serif);
+  font-size: 1.3rem;
+  color: var(--color-forest-dark);
+  font-weight: 600;
+}
+
+.attraction-desc {
+  font-family: var(--font-sans);
+  font-size: 0.92rem;
+  color: var(--color-slate);
+  line-height: 1.6;
+}
+
+@media (max-width: 992px) {
+  .attractions-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 650px) {
+  .attractions-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .attraction-card {
+    padding: 2rem;
+  }
+}
+
+/* How to Reach Section Styling */
+.reach-section {
+  background-color: var(--color-linen);
+  border-bottom: 1px solid var(--color-gray-light);
+}
+
+.reach-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.reach-header {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 3.5rem auto;
+}
+
+.reach-intro {
+  font-family: var(--font-sans);
+  font-size: 1rem;
+  color: var(--color-slate);
+  line-height: 1.7;
+}
+
+.reach-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2.5rem;
+  margin-bottom: 4rem;
+}
+
+.reach-card {
+  background-color: var(--color-white);
+  border-radius: 12px;
+  padding: 2.5rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.02);
+  border: 1px solid var(--color-gray-light);
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  transition: var(--transition-smooth);
+}
+
+.reach-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 15px 35px rgba(26, 48, 37, 0.06);
+  border-color: rgba(26, 48, 37, 0.08);
+}
+
+.reach-card-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.reach-icon-circle {
+  color: var(--color-forest);
+  background-color: rgba(26, 48, 37, 0.04);
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: var(--transition-smooth);
+  flex-shrink: 0;
+}
+
+.reach-card:hover .reach-icon-circle {
+  background-color: var(--color-forest);
+  color: var(--color-white);
+}
+
+.reach-card-title {
+  font-family: var(--font-serif);
+  font-size: 1.35rem;
+  color: var(--color-forest-dark);
+  font-weight: 600;
+}
+
+.reach-card-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  border-bottom: 1px solid var(--color-gray-light);
+  padding-bottom: 1rem;
+}
+
+.reach-meta-detail {
+  font-family: var(--font-sans);
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--color-pink-dark);
+}
+
+.reach-meta-distance {
+  font-family: var(--font-sans);
+  font-size: 0.75rem;
+  color: var(--color-gray);
+  font-weight: 500;
+}
+
+.reach-card-desc {
+  font-family: var(--font-sans);
+  font-size: 0.92rem;
+  color: var(--color-slate);
+  line-height: 1.6;
+}
+
+/* Contact Banner */
+.reach-contact-banner {
+  background: var(--color-forest);
+  color: var(--color-white);
+  border-radius: 16px;
+  padding: 3rem;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 2.5rem;
+  align-items: center;
+  box-shadow: 0 15px 45px rgba(26, 48, 37, 0.15);
+}
+
+.banner-icon-wrapper {
+  background-color: rgba(255, 255, 255, 0.08);
+  color: var(--color-pink);
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.banner-text-content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.banner-title {
+  font-family: var(--font-serif);
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: var(--color-white);
+}
+
+.banner-desc {
+  font-family: var(--font-sans);
+  font-size: 0.95rem;
+  color: rgba(255, 255, 255, 0.8);
+  line-height: 1.6;
+  max-width: 700px;
+}
+
+.banner-phone-link {
+  font-family: var(--font-serif);
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: var(--color-pink);
+  width: fit-content;
+  margin-top: 0.5rem;
+}
+
+@media (max-width: 992px) {
+  .reach-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .reach-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .reach-contact-banner {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  .banner-icon-wrapper {
+    margin: 0 auto;
+  }
+  
+  .banner-phone-link {
+    font-size: 1.8rem;
+    margin: 0.5rem auto 0 auto;
+  }
+}

@@ -114,7 +114,7 @@ export default function Navbar({ onOpenBooking }) {
         </div>
         <div className="mobile-menu-footer">
           <span className="mobile-menu-location">Upper Pelling, Sikkim</span>
-          <span className="mobile-menu-email">info@hotelgatecherry.com</span>
+          <span className="mobile-menu-email">info@redcherrypelling.com</span>
         </div>
       </div>
     </nav>
